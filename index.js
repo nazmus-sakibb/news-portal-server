@@ -33,7 +33,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json('File has been uploaded');
 })
 
-app.get('/', (req, res) => {
+app.get('/posts', (req, res) => {
   res.send("hello it's working");
 })
 
