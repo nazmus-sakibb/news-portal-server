@@ -34,7 +34,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send("hello it's working");
+  res.send("hello it's working now");
 })
 
 app.use("/api/auth", authRoute);
