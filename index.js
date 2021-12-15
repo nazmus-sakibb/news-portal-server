@@ -36,9 +36,9 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json('File has been uploaded');
 })
 
-// app.get('/', (req, res) => {
-//   res.send("hello it's working now");
-// })
+app.get('/', (req, res) => {
+  res.send("hello it's working");
+})
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
@@ -46,11 +46,11 @@ app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
 
-app.use(express.static(path.join(__dirname, "/client/build")));
+// app.use(express.static(path.join(__dirname, "/client/build")));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
+// });
 
 
 app.listen(process.env.PORT || 5000, () => {
