@@ -1,0 +1,22 @@
+.footer {
+    background-color: #2d3436;
+    color: white;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footerRight > a > .icon {
+    color: white;
+    margin: 0 10px;
+}
+
+.footerRight > a > .icon:hover {
+    color: #dfe6e9;
+}
