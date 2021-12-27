@@ -1,33 +1,29 @@
 # News Portal
 
-<!-- This project was bootstrapped with React router. MongoDB is used for database and Heroku is used for server site code and client site is deployed in the Firebase. This is a plumber service project. Anyone can book one service at a time after google login and pay with stripe, and see all the bookings in the booking list section. An admin can manage order and also make new admin in the admin palen area. This is the client site code ropository.
-You can visit that site from here... [PlumberGuru](https://plumber-guru.web.app/). -->
-
-A MERN-Stack web app with dashboard where people can pick a service at a time and fix a plumbing booking by payment with credit card or Stripe. An admin can review his booking and manage orders from his dashboard.
+A MERN-Stack web app with a registration page where people can register their user profile if they are not already a user. And if they have already a user profile then can log in to their account via the login page. Here a user can post something and update their post and also delete post from the page named 'write' and can see other user's posts. Also a user can update his/her profile details from the settings page.
 
 [Live Website](https://news-portal1.netlify.app/) | [Live API Server](https://news-portal2.herokuapp.com/) 
 
 
 #### Features
-- Firebase authentication system for login with google
+- User registration system
 
-- Online booking
+- User login system
 
-- Payment system with Credit card or Stripe
+- Update user profile 
 
-- Users dashboard
+- Create post
 
-- Admins dashboard
+- Update post
 
-- Add new service for customers
+- Delete post
 
-- Customers can give review
-
+- Can see other user's posts
 
 #### Front-End Thechnology :
 - JavaScript
 - React.js
-- Bootstrap5
+- Font Awesome
 - HTML5
 - CSS3
 
@@ -36,6 +32,7 @@ A MERN-Stack web app with dashboard where people can pick a service at a time an
 - Node.js
 - Express.js
 - MongoDB
+- Multer
 
 
 [Front-End Repository](https://github.com/nazmus-sakibb/news-portal-client)
