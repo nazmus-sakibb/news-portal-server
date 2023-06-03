@@ -13,11 +13,15 @@ const path = require('path');
 app.use(cors());
 
 dotenv.config();
+// parse data
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
+
+const uri = `mongodb+srv://newsPortal:mZXfGa0l1FJvPnr8@cluster0.s5ncp.mongodb.net/?retryWrites=true&w=majority`;
 mongoose
-  .connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true})
+  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true})
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
